@@ -2,7 +2,7 @@
 
 {
     stylix.enable = true;
-    stylix.image = ./wallpapers/ghibli-7.png;
+    stylix.image = ./wallpapers/kuromi.jpg;
 
     stylix.cursor.package = pkgs.bibata-cursors;
     stylix.cursor.name = "Bibata-Modern-Ice";

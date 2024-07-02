@@ -4,8 +4,8 @@
   imports =
   [
     ../../modules/home-manager/git.nix
-    ../../modules/home-manager/zsh.nix
-    ../../modules/home-manager/themes/ghibli/theme.nix
+    # ../../modules/home-manager/zsh.nix
+    ../../modules/home-manager/themes/ghibli-gtk.nix
   ];
 
   # Allow Unfree
@@ -33,6 +33,7 @@
     ferdium
     git
     gh
+    alacritty
 
     # School
     libreoffice-fresh

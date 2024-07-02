@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-    packages = with pkgs.gnomeExtensions; [
+    environment.systemPackages = with pkgs.gnomeExtensions; [
         arcmenu
         caffeine
         blur-my-shell
@@ -13,7 +13,6 @@
         cheese
         eog
         epiphany
-        gedit
         simple-scan
         totem
         yelp
