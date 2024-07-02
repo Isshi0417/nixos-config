@@ -1,10 +1,9 @@
-{ config, pkgs, ... }:
+{ inputs,onfig, pkgs, ... }:
 
 {
   imports =
   [
     ../../modules/home-manager/git.nix
-    # ../../modules/home-manager/ghibli/ghibli.nix
   ];
 
   # Allow Unfree
