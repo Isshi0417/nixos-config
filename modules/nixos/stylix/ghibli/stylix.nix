@@ -2,7 +2,7 @@
 
 {
     # Enable stylix
-    stylix.enable = libMkforce true;
+    services.stylix.enable = libMkforce true;
 
     stylix.homeManagerIntegration.autoImport = false;
     stylix.homeManagerIntegration.followSystem = true;
