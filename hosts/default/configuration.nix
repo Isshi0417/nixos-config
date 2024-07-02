@@ -10,10 +10,10 @@
       ./hardware-configuration.nix
       # NVIDIA setup
       ../../modules/nixos/nvidia.nix
+      # Gnome customization
+      ../../modules/nixos/gnome.nix
       # Home-manager
       inputs.home-manager.nixosModules.default
-      # Stylix
-      inputs.stylix.nixosModules.stylix
     ];
 
   # Bootloader.
@@ -101,7 +101,8 @@
       "shoi" = import ./home.nix;
     };
   };
-
+  
+  /*
   stylix.enable = true;
     stylix.image = ../../modules/home-manager/stylix/ghibli/ghibli-3.png;
     stylix.base16Scheme = {
@@ -122,6 +123,7 @@
         base0E = "#8646BF"; 
         base0F = "#BF4686"; 
     };
+    */
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

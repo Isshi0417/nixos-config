@@ -4,6 +4,8 @@
   imports =
   [
     ../../modules/home-manager/git.nix
+    ../../modules/home-manager/zsh.nix
+    ../../modules/home-manager/themes/ghibli/theme.nix
   ];
 
   # Allow Unfree
