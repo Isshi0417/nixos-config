@@ -5,7 +5,7 @@
   [
     ../../modules/home-manager/git.nix
     # ../../modules/home-manager/zsh.nix
-    ../../modules/home-manager/themes/ghibli-gtk.nix
+    ../../modules/home-manager/themes/basic-gtk.nix
   ];
 
   # Allow Unfree
@@ -29,6 +29,7 @@
   # environment.
   home.packages = with pkgs; [
     # Essentials
+    corefonts
     firefox
     ferdium
     git

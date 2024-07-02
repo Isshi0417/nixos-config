@@ -18,7 +18,7 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
-      nixosConfigurations.default = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.alienware = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
           inputs.home-manager.nixosModules.default
