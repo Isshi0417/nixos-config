@@ -12,6 +12,8 @@
       ../../modules/nixos/nvidia.nix
       # Gnome customization
       ../../modules/nixos/gnome.nix
+      # Nh helper
+      ../../modules/nixos/nh.nix
       # Home-manager
       inputs.home-manager.nixosModules.default
       # Stylix colors
@@ -109,6 +111,10 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+  environment.sessionVariables = {
+    FLAKE = "/home/shoi/etc/nixos";
+  };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
