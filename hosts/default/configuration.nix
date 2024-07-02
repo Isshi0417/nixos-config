@@ -8,17 +8,25 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+
       # NVIDIA setup
       ../../modules/nixos/nvidia.nix
+
       # Gnome customization
       ../../modules/nixos/gnome.nix
+
       # Nh helper
       ../../modules/nixos/nh.nix
+
       # Home-manager
       inputs.home-manager.nixosModules.default
+
       # Stylix colors
       ../../modules/nixos/stylix/ghibli.nix
       #../../modules/nixos/stylix/kuromi.nix
+
+      # Gaming
+      ../../modules/nixos/gaming.nix
     ];
 
   # Bootloader.
