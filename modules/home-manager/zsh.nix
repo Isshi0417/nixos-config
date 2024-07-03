@@ -24,4 +24,9 @@
             theme = "robbyrussell";
         };
     };
+
+    # Configure starship
+    programs.starship = {
+        enable = true;
+    };
 }
