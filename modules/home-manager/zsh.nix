@@ -2,7 +2,7 @@
 
 {
     # Download zsh packages
-    packages = with pkgs; [
+    home.packages = with pkgs; [
         zsh
         oh-my-zsh
         starship
@@ -15,14 +15,13 @@
         autosuggestion.enable = true;
         syntaxHighlighting.enable = true;
 
-        programs.zsh = {
-            oh-my-zsh = {
-                enable = true;
-                plugins = [
-                    "git"
-                ];
-                theme = "robbyrussell";
-            };
+        # oh-my-zsh
+        oh-my-zsh = {
+            enable = true;
+            plugins = [
+                "git"
+            ];
+            theme = "robbyrussell";
         };
     };
 }

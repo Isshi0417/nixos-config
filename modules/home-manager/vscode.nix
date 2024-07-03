@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-    home.programs.vscode = {
+    programs.vscode = {
         enable = true;
         extensions = with pkgs.vscode-extensions; [
             bbenoist.nix
