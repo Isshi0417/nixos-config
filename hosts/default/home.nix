@@ -36,6 +36,7 @@
     git
     gh
     alacritty
+    vscode-fhs
 
     # School
     libreoffice-fresh
