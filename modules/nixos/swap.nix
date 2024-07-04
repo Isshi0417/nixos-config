@@ -3,6 +3,6 @@
 {
     swapDevices = [{
         device = "/var/lib/swapfile";
-        seize = 20*1024;
+        size = 20*1024;
     }];
 }
