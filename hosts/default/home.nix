@@ -6,7 +6,6 @@
     ../../modules/home-manager/git.nix
     ../../modules/home-manager/zsh.nix
     ../../modules/home-manager/themes/basic-gtk.nix
-    #../../modules/home-manager/vscode.nix
   ];
 
   # Allow Unfree

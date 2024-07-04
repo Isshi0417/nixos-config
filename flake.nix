@@ -10,6 +10,11 @@
     };
 
     stylix.url = "github:danth/stylix";
+
+    aagl = {
+      url = "github:ezKEa/aagl-gtk-on-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
@@ -21,9 +26,17 @@
       nixosConfigurations.alienware = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
-          inputs.home-manager.nixosModules.default
+          # Config
           ./hosts/default/configuration.nix
+
+          # Home-manager
+          inputs.home-manager.nixosModules.default
+          
+          # Stylix
           inputs.stylix.nixosModules.stylix
+
+          #Aagl
+          inputs.aagl.nixosModules.default
         ];
       };
     };

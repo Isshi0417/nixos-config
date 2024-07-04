@@ -112,15 +112,14 @@
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
   };
-
+  
+  # Home Manager
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
       "shoi" = import ./home.nix;
     };
   };
-
-  home-manager.backupFileExtension = "backup";
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
