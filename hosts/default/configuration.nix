@@ -9,6 +9,9 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
 
+      # Swap
+      ../../modules/nixos/swap.nix
+
       # NVIDIA setup
       ../../modules/nixos/nvidia.nix
 
