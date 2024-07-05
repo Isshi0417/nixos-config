@@ -26,8 +26,8 @@
 
       # Stylix colors
       #../../modules/nixos/stylix/ghibli.nix
-      #../../modules/nixos/stylix/kuromi.nix
-      ../../modules/nixos/stylix/dracula.nix
+      ../../modules/nixos/stylix/kuromi.nix
+      #../../modules/nixos/stylix/dracula.nix
 
       # Gaming
       ../../modules/nixos/gaming.nix

@@ -50,7 +50,7 @@
     # Other utility
     mullvad-vpn
     easyeffects
-    transmission
+    transmission_4-gtk
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
