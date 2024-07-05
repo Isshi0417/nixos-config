@@ -42,6 +42,10 @@
     onedrive
     typora
     logisim
+    aspell
+    aspellDicts.en
+    aspellDicts.en-computers
+
 
     # For funsies
     spotify
