@@ -4,7 +4,7 @@
   imports =
   [
     ../../modules/home-manager/git.nix
-    ../../modules/home-manager/zsh.nix
+    ../../modules/home-manager/shell/zsh.nix
     ../../modules/home-manager/themes/basic-gtk.nix
   ];
 
