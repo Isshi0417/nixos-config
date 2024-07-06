@@ -8,14 +8,10 @@
   imports =
     [ # Hardware-related
       ./hardware-configuration.nix
-      ../../modules/nixos/hardware/swap.nix
-      ../../modules/nixos/hardware/nvidia.nix
+      ../../modules/nixos/alienware/alienware.nix
 
       # Gnome customization
       ../../modules/nixos/gnome.nix
-
-      # Nh helper
-      ../../modules/nixos/nh.nix
 
       # Home-manager
       inputs.home-manager.nixosModules.default
@@ -24,9 +20,6 @@
       #../../modules/nixos/stylix/ghibli.nix
       ../../modules/nixos/stylix/kuromi.nix
       #../../modules/nixos/stylix/dracula.nix
-
-      # Gaming
-      ../../modules/nixos/gaming.nix
     ];
 
   # Bootloader.
