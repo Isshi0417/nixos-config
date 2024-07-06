@@ -6,14 +6,10 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [ # Hardware-related
       ./hardware-configuration.nix
-
-      # Swap
-      ../../modules/nixos/swap.nix
-
-      # NVIDIA setup
-      ../../modules/nixos/nvidia.nix
+      ../../modules/nixos/hardware/swap.nix
+      ../../modules/nixos/hardware/nvidia.nix
 
       # Gnome customization
       ../../modules/nixos/gnome.nix
@@ -130,6 +126,9 @@
   environment.sessionVariables = {
     FLAKE = "/home/shoi/etc/nixos";
   };
+
+  # Enable Mullvad
+  services.mullvad-vpn.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
