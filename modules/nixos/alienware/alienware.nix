@@ -4,6 +4,7 @@
     imports = [
         ./hardware/cpu/tiger-lake.nix
         ./hardware/gpu/nvidia.nix
+        ./hardware/ssd/ssd.nix
         ./gaming.nix
         ./nh.nix
     ];
