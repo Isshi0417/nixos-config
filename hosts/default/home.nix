@@ -29,7 +29,6 @@
   # environment.
   home.packages = with pkgs; [
     # Essentials
-    corefonts
     firefox
     ferdium
     git
@@ -47,12 +46,13 @@
     aspellDicts.en
     aspellDicts.en-computers
 
-
     # For funsies
     spotify
     vesktop
 
     # Other utility
+    corefonts
+    noto-fonts
     mullvad-vpn
     easyeffects
     transmission_4-gtk
