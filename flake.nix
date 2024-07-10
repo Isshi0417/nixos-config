@@ -9,6 +9,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    catppuccin.url = "github:catppuccin/nix";
+
     stylix.url = "github:danth/stylix";
 
     aagl = {
@@ -31,9 +33,12 @@
 
           # Home-manager
           inputs.home-manager.nixosModules.default
+
+          # Catppuccin
+          inputs.catppuccin.nixosModules.catppuccin
           
           # Stylix
-          inputs.stylix.nixosModules.stylix
+          # inputs.stylix.nixosModules.stylix
 
           #Aagl
           inputs.aagl.nixosModules.default

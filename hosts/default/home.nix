@@ -5,7 +5,10 @@
   [
     ../../modules/home-manager/git.nix
     ../../modules/home-manager/shell/zsh.nix
-    ../../modules/home-manager/themes/basic-gtk.nix
+    ../../modules/home-manager/vscode.nix
+    #../../modules/home-manager/themes/basic-gtk.nix
+    ../../modules/home-manager/hyprland.nix
+    ../../modules/home-manager/catppuccin.nix
   ];
 
   # Allow Unfree
@@ -34,7 +37,6 @@
     git
     gh
     kitty
-    vscode-fhs
 
     # School
     libreoffice-fresh

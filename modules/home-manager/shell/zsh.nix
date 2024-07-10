@@ -2,7 +2,7 @@
 
 {
     imports = [
-        ./themes/dracula.nix
+        #./themes/dracula.nix
     ];
 
     # Download zsh packages
@@ -26,5 +26,10 @@
                 "git"
             ];
         };
+    };
+
+    programs.starship = {
+        enable = true;
+        enableZshIntegration = true;
     };
 }

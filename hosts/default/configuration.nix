@@ -18,7 +18,7 @@
 
       # Stylix colors
       #../../modules/nixos/stylix/ghibli.nix
-      ../../modules/nixos/stylix/kuromi.nix
+      #../../modules/nixos/stylix/kuromi.nix
       #../../modules/nixos/stylix/dracula.nix
     ];
 
@@ -67,6 +67,17 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
+
+  # Enable Hyprland
+  nix.settings = {
+    substituters = ["https://hyprland.cachix.org"];
+    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+  };
+
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
 
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
@@ -122,6 +133,8 @@
     };
   };
 
+  home-manager.backupFileExtension = "hm-backup";
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -142,6 +155,11 @@
     dxvk_2
     lm_sensors
   ];
+
+  catppuccin = {
+    enable = true;
+    flavor = "mocha";
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
