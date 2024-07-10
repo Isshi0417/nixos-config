@@ -33,7 +33,7 @@
     ferdium
     git
     gh
-    alacritty
+    kitty
     vscode-fhs
 
     # School

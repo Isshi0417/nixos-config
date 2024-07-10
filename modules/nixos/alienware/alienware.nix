@@ -7,6 +7,7 @@
         ./hardware/ssd/ssd.nix
         ./gaming.nix
         ./nh.nix
+        ./hyprland.nix
     ];
 
     swapDevices = [{
