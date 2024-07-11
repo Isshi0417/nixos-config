@@ -7,8 +7,7 @@
     ../../modules/home-manager/shell/zsh.nix
     ../../modules/home-manager/vscode.nix
     #../../modules/home-manager/themes/basic-gtk.nix
-    ../../modules/home-manager/hyprland.nix
-    ../../modules/home-manager/catppuccin.nix
+    ../../modules/home-manager/catppuccin-mocha.nix
   ];
 
   # Allow Unfree
@@ -36,7 +35,6 @@
     ferdium
     git
     gh
-    kitty
 
     # School
     libreoffice-fresh
@@ -56,10 +54,13 @@
     corefonts
     noto-fonts
     mullvad-vpn
-    easyeffects
     transmission_4-gtk
     imagemagick
   ];
+
+  programs.kitty.enable = true;
+
+  services.easyeffects.enable = true;
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.

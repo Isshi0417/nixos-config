@@ -68,19 +68,13 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  # Enable Hyprland
-  nix.settings = {
-    substituters = ["https://hyprland.cachix.org"];
-    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
-  };
-
-  programs.hyprland = {
+  services.displayManager.sddm = {
     enable = true;
-    xwayland.enable = true;
+    package = pkgs.kdePackages.sddm;
+    wayland.enable = true;
   };
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
@@ -159,6 +153,23 @@
   catppuccin = {
     enable = true;
     flavor = "mocha";
+  };
+
+  fonts = {
+    enableDefaultPackages = true;
+    packages = with pkgs; [
+      noto-fonts
+      nerdfonts
+      font-awesome
+    ];
+
+    fontconfig = {
+      defaultFonts = {
+        serif = [ "Hack Nerd Font" ];
+        sansSerif = [ "DejaVuSansM Nerd Font" ];
+        monospace = [ "JetBrainsMono Nerd Font" ];
+      };
+    };
   };
 
   # Some programs need SUID wrappers, can be configured further or are

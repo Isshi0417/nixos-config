@@ -48,10 +48,4 @@
     qt.style.catppuccin.enable = true;
     qt.style.catppuccin.accent = "mocha";
     qt.style.catppuccin.apply = true;
-
-    services.mako.catppuccin.enable = true;
-    services.mako.catppuccin.flavor = "mocha";
-
-    wayland.windowManager.hyprland.catppuccin.enable = true;
-    wayland.windowManager.hyprland.catppuccin.flavor = "mocha";
 }
