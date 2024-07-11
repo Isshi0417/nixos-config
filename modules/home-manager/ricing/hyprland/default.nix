@@ -38,13 +38,16 @@
             decoration = {
                 rounding = "15";
 
+                active_opacity = "0.9";
+                inactive_opacity = "0.9";
+
                 drop_shadow = "true";
                 shadow_range = "4";
                 shadow_render_power = "3";
 
                 blur = {
                     enabled = "true";
-                    size = "3";
+                    size = "6";
                     passes = "1";
 
                     vibrancy = "0.1696";
