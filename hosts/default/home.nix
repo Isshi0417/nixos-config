@@ -6,11 +6,6 @@
     ../../modules/home-manager
   ];
 
-  # Allow Unfree
-  nixpkgs.config.allowUnfree = true;
-
-  # Home Manager needs a bit of information about you and the paths it should
-  # manage.
   home.username = "shoi";
   home.homeDirectory = "/home/shoi";
 
@@ -23,39 +18,18 @@
   # release notes.
   home.stateVersion = "24.05"; # Please read the comment before changing.
 
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
   home.packages = with pkgs; [
-    # Essentials
-    firefox
-    ferdium
-    git
-    gh
-
-    # School
-    libreoffice-fresh
-    onedrive
-    typora
-    logisim
-    pandoc
-    aspell
-    aspellDicts.en
-    aspellDicts.en-computers
-
     # For funsies
     spotify
     vesktop
 
     # Other utility
-    corefonts
-    noto-fonts
     mullvad-vpn
     transmission_4-gtk
     imagemagick
   ];
 
-  programs.kitty.enable = true;
-
+  # Enable sound control
   services.easyeffects.enable = true;
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
