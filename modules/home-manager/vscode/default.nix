@@ -6,7 +6,8 @@
         extensions = with pkgs.vscode-extensions; [
             bbenoist.nix
             ms-python.python
-            tal7aouy.icons
+            catppuccin.catppuccin-vsc-icons
+            catppuccin.catppuccin-vsc
         ];
     };
 }
