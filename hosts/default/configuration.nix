@@ -10,14 +10,14 @@
       ./hardware-configuration.nix
       ../../modules/hardware
 
+      # System
+      ../../modules/system
+
       # NH
       ../../modules/nh
 
       # Gaming
       ../../modules/gaming
-
-      # Gnome customization
-      ../../modules/gnome
 
       # Catppuccin
       ../../modules/ricing/catppuccin
@@ -26,28 +26,18 @@
       inputs.home-manager.nixosModules.default
     ];
 
-  # Bootloader.
-  boot.loader = {
-    efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot";
-    };
-    grub = {
-      efiSupport = true;
-      device = "nodev";
-      useOSProber = true;
-    };
-  };
-
+  # Swap
   swapDevices = [{
     device = "/var/lib/swapfile";
     size = 20*1024;
   }];
 
+  # Hardware update
   hardware = {
     enableRedistributableFirmware = lib.mkDefault true;
   };
 
+  # Temp control
   services = {
     fwupd = {
       enable = lib.mkDefault true;
@@ -57,18 +47,12 @@
     };
   };
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
   networking.hostName = "alienware"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-  # Enable networking
-  networking.networkmanager.enable = true;
-
+  # Enable mullvad
+  services.mullvad-vpn.enable = true;
+  
   # Set your time zone.
   time.timeZone = "Asia/Seoul";
 
@@ -87,49 +71,11 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
   services.displayManager.sddm = {
     enable = true;
     package = pkgs.kdePackages.sddm;
     wayland.enable = true;
   };
-
-  # Enable the GNOME Desktop Environment.
-  services.xserver.desktopManager.gnome.enable = true;
-
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "";
-  };
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
-  # Enable bluetooth
-  hardware.bluetooth.enable = true;
-  hardware.bluetooth.powerOnBoot = true;
-
-  # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
-  };
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
 
   programs.zsh.enable = true;
 
@@ -137,7 +83,7 @@
   users.users.shoi = {
     isNormalUser = true;
     description = "Sho Ishida";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "inputs" ];
     shell = pkgs.zsh;
   };
   
@@ -151,43 +97,16 @@
 
   home-manager.backupFileExtension = "hm-backup";
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
   environment.sessionVariables = {
     FLAKE = "/home/shoi/etc/nixos";
   };
-
-  # Enable Mullvad
-  services.mullvad-vpn.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
-    gparted
-    nh
-    dxvk_2
     lm_sensors
   ];
-
-  fonts = {
-    enableDefaultPackages = true;
-    packages = with pkgs; [
-      noto-fonts
-      nerdfonts
-      font-awesome
-    ];
-
-    fontconfig = {
-      defaultFonts = {
-        serif = [ "Hack Nerd Font" ];
-        sansSerif = [ "DejaVuSansM Nerd Font" ];
-        monospace = [ "JetBrainsMono Nerd Font" ];
-      };
-    };
-  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

@@ -6,6 +6,7 @@
         ./ricing/catppuccin
         ./vscode
         ./terminal
+        ./gnome-extensions
     ];
 
     # Allow Unfree

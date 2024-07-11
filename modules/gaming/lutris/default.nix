@@ -7,5 +7,6 @@
         wineWowPackages.staging
         winetricks
         lutris
+        dxvk_2
     ];
 }
