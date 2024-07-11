@@ -4,7 +4,6 @@
   imports =
   [
     ../../modules/home-manager
-    ../../modules/home-manager/ricing/stylix
   ];
 
   home.username = "shoi";

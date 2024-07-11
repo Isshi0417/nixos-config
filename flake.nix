@@ -35,7 +35,7 @@
           inputs.home-manager.nixosModules.default
 
           # Catppuccin
-          inputs.catppuccin.nixosModules.catppuccin
+          # inputs.catppuccin.nixosModules.catppuccin
           
           # Stylix
           inputs.stylix.nixosModules.stylix

@@ -2,25 +2,25 @@
 
 {
     stylix.enable = true;
-    stylix.autoEnable = false;
+    stylix.autoEnable = true;
 
     stylix.base16Scheme = {
-        base00 = "282828"; 
-        base01 = "3c3836"; 
-        base02 = "504945"; 
-        base03 = "665c54"; 
-        base04 = "bdae93"; 
-        base05 = "d5c4a1";
-        base06 = "ebdbb2";
-        base07 = "fbf1c7"; 
-        base08 = "fb4934"; 
-        base09 = "fe8019"; 
-        base0A = "fabd2f"; 
-        base0B = "b8bb26"; 
-        base0C = "8ec07c";
-        base0D = "d3869b"; 
-        base0E = "d65d0e";
-        base0F = "83a598"; 
+        base00 = "181818"; # Deep Space Black
+        base01 = "303030"; # Lunar Gray
+        base02 = "484848"; # Meteorite Gray
+        base03 = "606060"; # Satellite Silver
+        base04 = "808080"; # Moon Dust
+        base05 = "9E9E9E"; # Jet Stream
+        base06 = "BDBDBD"; # Space Cloud
+        base07 = "FFFFFF"; # Pure Energy
+        base08 = "F44336"; # Atomic Red
+        base09 = "2196F3"; # Cosmic Blue
+        base0A = "4CAF50"; # Radioactive Green
+        base0B = "FFEB3B"; # Solar Yellow
+        base0C = "9C27B0"; # Nebula Purple
+        base0D = "FF9800"; # Martian Orange
+        base0E = "795548"; # Rocket Brown
+        base0F = "607D8B"; # Satellite Blue
     };
 
     stylix.image = ../../../wallpapers/maze.png;

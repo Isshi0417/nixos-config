@@ -3,10 +3,11 @@
 {
     imports = [
         ./git
-        ./vscode
         ./terminal
         ./gnome-extensions
+        ./vscode
         ./ricing/hyprland
+        ./ricing/stylix
     ];
 
     # Allow Unfree
