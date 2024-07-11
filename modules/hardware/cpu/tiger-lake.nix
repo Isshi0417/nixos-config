@@ -1,7 +1,6 @@
 { config, lib, ... }:
 {
   imports = [
-    ./intel.nix
     ../gpu/intel.nix
    ];
   config = lib.mkMerge [

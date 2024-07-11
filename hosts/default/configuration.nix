@@ -8,7 +8,13 @@
   imports =
     [ # Hardware-related
       ./hardware-configuration.nix
-      ../../modules/nixos/alienware/alienware.nix
+      ../../modules/hardware
+
+      # NH
+      ../../modules/nh
+
+      # Gaming
+      ../../modules/gaming
 
       # Gnome customization
       ../../modules/nixos/gnome.nix
@@ -32,6 +38,24 @@
       efiSupport = true;
       device = "nodev";
       useOSProber = true;
+    };
+  };
+
+  swapDevices = [{
+    device = "/var/lib/swapfile";
+    size = 20*1024;
+  }];
+
+  hardware = {
+    enableRedistributableFirmware = lib.mkDefault true;
+  };
+
+  services = {
+    fwupd = {
+      enable = lib.mkDefault true;
+    };
+    thermald = {
+      enable = lib.mkDefault true;
     };
   };
 
