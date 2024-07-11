@@ -3,10 +3,11 @@
 {
     imports = [
         ./git
-        ./ricing/catppuccin
         ./vscode
         ./terminal
         ./gnome-extensions
+        ./ricing/catppuccin
+        ./ricing/hyprland
     ];
 
     # Allow Unfree
