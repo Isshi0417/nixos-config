@@ -1,11 +1,11 @@
 { pkgs, ... }:
 
 {
-    stylix.homeManagerIntegration.followSystem = true;
+    imports = [
+        ./themes
+    ];
 
-    stylix.enable = true;
-    stylix.autoEnable = true;
-    stylix.image = ./wallpapers/kuromi.jpg;
+    stylix.homeManagerIntegration.followSystem = true;
 
     stylix.cursor.package = pkgs.bibata-cursors;
     stylix.cursor.name = "Bibata-Modern-Ice";

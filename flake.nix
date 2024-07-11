@@ -38,7 +38,7 @@
           inputs.catppuccin.nixosModules.catppuccin
           
           # Stylix
-          # inputs.stylix.nixosModules.stylix
+          inputs.stylix.nixosModules.stylix
 
           #Aagl
           inputs.aagl.nixosModules.default

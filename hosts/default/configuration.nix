@@ -17,15 +17,13 @@
       ../../modules/gaming
 
       # Gnome customization
-      ../../modules/nixos/gnome.nix
+      ../../modules/gnome
+
+      # Catppuccin
+      ../../modules/ricing/catppuccin
 
       # Home-manager
       inputs.home-manager.nixosModules.default
-
-      # Stylix colors
-      #../../modules/nixos/stylix/ghibli.nix
-      #../../modules/nixos/stylix/kuromi.nix
-      #../../modules/nixos/stylix/dracula.nix
     ];
 
   # Bootloader.
@@ -173,11 +171,6 @@
     dxvk_2
     lm_sensors
   ];
-
-  catppuccin = {
-    enable = true;
-    flavor = "mocha";
-  };
 
   fonts = {
     enableDefaultPackages = true;

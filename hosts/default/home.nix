@@ -3,11 +3,7 @@
 {
   imports =
   [
-    ../../modules/home-manager/git.nix
-    ../../modules/home-manager/shell/zsh.nix
-    ../../modules/home-manager/vscode.nix
-    #../../modules/home-manager/themes/basic-gtk.nix
-    ../../modules/home-manager/catppuccin-mocha.nix
+    ../../modules/home-manager
   ];
 
   # Allow Unfree

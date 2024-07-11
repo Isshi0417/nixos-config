@@ -1,10 +1,6 @@
 { pkgs, ... }:
 
 {
-    imports = [
-        #./themes/dracula.nix
-    ];
-
     # Download zsh packages
     home.packages = with pkgs; [
         zsh
