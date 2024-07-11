@@ -6,8 +6,7 @@
         ./terminal
         ./gnome-extensions
         ./vscode
-        ./ricing/hyprland
-        ./ricing/stylix
+        ./ricing
     ];
 
     # Allow Unfree

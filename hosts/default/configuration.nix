@@ -19,8 +19,8 @@
       # Gaming
       ../../modules/gaming
 
-      # Stylix
-      ../../modules/ricing/stylix
+      # Ricing
+      ../../modules/ricing
 
       # Home-manager
       inputs.home-manager.nixosModules.default
@@ -71,11 +71,7 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  services.displayManager.sddm = {
-    enable = true;
-    package = pkgs.kdePackages.sddm;
-    wayland.enable = true;
-  };
+  services.xserver.displayManager.lightdm.enable = true;
 
   programs.zsh.enable = true;
 
