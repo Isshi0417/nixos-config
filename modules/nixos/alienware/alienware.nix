@@ -7,7 +7,6 @@
         ./hardware/ssd/ssd.nix
         ./gaming.nix
         ./nh.nix
-        ./awesomewm
     ];
 
     swapDevices = [{
