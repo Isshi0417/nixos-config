@@ -71,7 +71,10 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.displayManager.gdm = {
+    enable = true;
+    wayland = true;
+  };
 
   programs.zsh.enable = true;
 
