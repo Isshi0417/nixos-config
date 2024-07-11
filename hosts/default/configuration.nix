@@ -19,8 +19,8 @@
       # Gaming
       ../../modules/gaming
 
-      # Catppuccin
-      ../../modules/ricing/catppuccin
+      # Stylix
+      ../../modules/ricing/stylix
 
       # Home-manager
       inputs.home-manager.nixosModules.default
@@ -95,7 +95,7 @@
     };
   };
 
-  home-manager.backupFileExtension = "hm-backup";
+  home-manager.backupFileExtension = "backup";
 
   environment.sessionVariables = {
     FLAKE = "/home/shoi/etc/nixos";

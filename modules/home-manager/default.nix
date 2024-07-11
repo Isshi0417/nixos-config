@@ -6,7 +6,6 @@
         ./vscode
         ./terminal
         ./gnome-extensions
-        ./ricing/catppuccin
         ./ricing/hyprland
     ];
 
@@ -15,7 +14,6 @@
 
     home.packages = with pkgs; [
         # Essentials
-        firefox
         ferdium
         git
         gh
@@ -31,4 +29,6 @@
         corefonts
         noto-fonts
     ];
+
+    programs.firefox.enable = true;
 }
