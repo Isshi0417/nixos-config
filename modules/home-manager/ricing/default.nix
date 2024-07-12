@@ -8,16 +8,16 @@
     ];
 
     # GTK theming
-    gtk.enable = true;
+    #gtk.enable = true;
 
-    gtk.iconTheme.package = pkgs.gruvbox-plus-icons;
-    gtk.iconTheme.name = "Gruvbox-Plus-Dark";
+    #gtk.iconTheme.package = pkgs.gruvbox-plus-icons;
+    #gtk.iconTheme.name = "Gruvbox-Plus-Dark";
 
     # Qt theming
-    qt.enable = true;
-    qt.platformTheme = "gtk";
-    qt.style.name = "adwaita-dark";
-    qt.style.package = pkgs.adwaita-qt;
+    #qt.enable = true;
+    #qt.platformTheme = "gtk";
+    #qt.style.name = "adwaita-dark";
+    #qt.style.package = pkgs.adwaita-qt;
 
     programs.yazi.enable = true;
 

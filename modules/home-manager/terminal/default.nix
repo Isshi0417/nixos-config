@@ -2,8 +2,7 @@
 
 {
     imports = [
-        ./shell
         ./kitty
-        ./wezterm
+        ./shell
     ];
 }
