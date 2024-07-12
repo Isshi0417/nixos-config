@@ -22,15 +22,21 @@
     # For funsies
     spotify
     vesktop
+    ncmpcpp
+    mpd
+    mpdris2
 
     # Other utility
     mullvad-vpn
     transmission_4-gtk
     imagemagick
+    neofetch
   ];
 
   # Enable sound control
   services.easyeffects.enable = true;
+
+  services.playerctld.enable = true;
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.

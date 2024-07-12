@@ -82,7 +82,7 @@
   users.users.shoi = {
     isNormalUser = true;
     description = "Sho Ishida";
-    extraGroups = [ "networkmanager" "wheel" "input" ];
+    extraGroups = [ "networkmanager" "wheel" "input" "audio" ];
     shell = pkgs.zsh;
   };
   
@@ -105,6 +105,8 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     lm_sensors
+    brightnessctl
+    inotify-tools
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

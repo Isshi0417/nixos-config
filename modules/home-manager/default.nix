@@ -28,6 +28,7 @@
         # Utils
         corefonts
         noto-fonts
+        flameshot
     ];
 
     programs.firefox.enable = true;

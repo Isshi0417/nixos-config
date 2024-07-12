@@ -2,6 +2,7 @@
 
 {
     imports = [
+        ./awesomewm
     ];
 
     # GTK theming
