@@ -2,7 +2,7 @@
 
 {
     imports = [
-        ./hyprland
+        ./stylix
     ];
 
     # GTK theming

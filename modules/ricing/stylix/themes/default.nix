@@ -1,7 +1,0 @@
-{ ... }:
-
-{
-    imports = [
-        ./nostalgia.nix
-    ];
-}

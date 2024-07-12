@@ -94,7 +94,7 @@
     };
   };
 
-  home-manager.backupFileExtension = "backup";
+  home-manager.backupFileExtension = "hm-backup-1";
 
   environment.sessionVariables = {
     FLAKE = "/home/shoi/etc/nixos";
