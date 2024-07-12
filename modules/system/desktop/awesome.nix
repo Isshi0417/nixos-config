@@ -19,14 +19,8 @@ let
 in {
     services.xserver.windowManager.awesome = {
         enable = true;
-        package = awesome;
-        luaModules = with pkgs.luaPackages; [
-            luarocks
-            luadbi-mysql
-        ];
+        package = awesome.override {
+          lua = pkgs.luajit;
+        };
     };
-
-    environment.systemPackages = with pkgs; [
-        picom
-    ];
 }

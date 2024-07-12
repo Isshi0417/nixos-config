@@ -5,7 +5,8 @@
         ./git
         ./terminal
         ./gnome-extensions
-        ./ricing
+        ./awesome
+        ./hyprland
     ];
 
     # Allow Unfree

@@ -94,7 +94,7 @@
     };
   };
 
-  home-manager.backupFileExtension = "hm-backup-1";
+  home-manager.backupFileExtension = "backup-1";
 
   environment.sessionVariables = {
     FLAKE = "/home/shoi/etc/nixos";
@@ -137,6 +137,6 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "24.05"; # Did you read the comment?
+  system.stateVersion = "23.11"; # Did you read the comment?
 
 }
