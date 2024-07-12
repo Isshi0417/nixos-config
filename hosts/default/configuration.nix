@@ -82,7 +82,7 @@
   users.users.shoi = {
     isNormalUser = true;
     description = "Sho Ishida";
-    extraGroups = [ "networkmanager" "wheel" "inputs" ];
+    extraGroups = [ "networkmanager" "wheel" "input" ];
     shell = pkgs.zsh;
   };
   

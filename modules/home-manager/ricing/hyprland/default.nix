@@ -1,6 +1,11 @@
 { config, ... }:
 
 {
+    imports = [
+        ./rofi.nix
+        ./waybar.nix
+    ];
+
     wayland.windowManager.hyprland = {
         enable = true;
 
@@ -91,13 +96,19 @@
                 workspace_swipe = "false";
             };
 
+            "$browser" = "firefox";
+            "$terminal" = "kitty";
+            "$fileManager" = "nautilus";
+            "$launcher" = "rofi -show drun";
+
             "$mod" = "SUPER";
             bind = [
-                "$mod, F, exec, firefox"
-                "$mod, T, exec, kitty"
+                "$mod, F, exec, $browser"
+                "$mod, T, exec, $terminal"
                 "$mod, Q, killactive,"
                 "$mod, M, exit,"
-                "$mod, E, exec, nautilus"
+                "$mod, E, exec, $fileManager"
+                "$mod, R, exec, $launcher"
                 "$mod, V, togglefloating,"
                 "$mod, P, pseudo,"
                 "$mod, J, togglesplit,"

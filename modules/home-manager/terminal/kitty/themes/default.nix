@@ -2,7 +2,6 @@
 
 {
     imports = [
-        ./shell
-        ./kitty
+        ./retrofuturism
     ];
 }

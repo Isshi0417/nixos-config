@@ -2,7 +2,7 @@
 
 {
     imports = [
-        ./stylix
+        
     ];
 
     environment.systemPackages = with pkgs; [
