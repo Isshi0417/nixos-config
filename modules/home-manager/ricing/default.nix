@@ -2,7 +2,6 @@
 
 {
     imports = [
-        ./stylix
     ];
 
     # GTK theming

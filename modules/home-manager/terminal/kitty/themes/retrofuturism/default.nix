@@ -3,43 +3,43 @@
 {
     programs.kitty = {
         settings = {
-            foreground = "#f8f8f2";
-            background = "#4c4c4c";
+            foreground = "#e5e5cd";
+            background = "#413e3e";
 
-            selection_foreground = "#4c4c4c";
-            selection_background = "#e7e7e7";
+            selection_foreground = "#413e3e";
+            selection_background = "#e5e5cd";
 
             # black
-            color0 = "#4c4c4c";
-            color8 = "#acacac";
+            color0 = "#343232";
+            color8 = "#5c5656";
 
             # red
-            color1 = "#fe7394";
-            color9 = "#ffedf1";
+            color1 = "#fb5c82";
+            color9 = "#fea6bb";
             
             # green
-            color2 = "#cacc73";
-            color10 = "#dadc9c";
+            color2 = "#c2c561";
+            color10 = "#d9da98";
 
             # yellow
-            color3 = "#fedb5b";
-            color11 = "#fefbea";
+            color3 = "#fbd444";
+            color11 = "#fee68e";
 
             # blue
-            color4 = "#7688ea";
-            color12 = "#edeffc";
+            color4 = "#6075e6";
+            color12 = "#a2aef1";
 
             # magenta
-            color5 = "#fac3ed";
-            color13 = "#fff6fe";
+            color5 = "#f273d4";
+            color13 = "#f9b8ea";
 
             # cyan
-            color6 = "#96ceb4";
+            color6 = "#85c5a8";
             color14 = "#b8dfcd";
 
             # white
-            color7 = "#e5e5cd";
-            color15 = "#f6f6ee";
+            color7 = "#e5e5cc";
+            color15 = "#f7f7ee";
         };
     };
 }

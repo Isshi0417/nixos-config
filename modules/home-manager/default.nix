@@ -5,7 +5,6 @@
         ./git
         ./terminal
         ./gnome-extensions
-        ./vscode
         ./ricing
     ];
 
@@ -17,6 +16,7 @@
         ferdium
         git
         gh
+        vscode-fhs
 
         # School
         libreoffice-fresh
