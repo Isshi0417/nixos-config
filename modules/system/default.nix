@@ -17,7 +17,7 @@
         wget
         gparted
         nh
-        lua54Packages.luarocks-nix
+        playerctl
     ];
 
     fonts = {

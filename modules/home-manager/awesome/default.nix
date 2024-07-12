@@ -19,14 +19,8 @@ let
 in 
 {
   imports = [
-    ./simple/rofi
-    ./simple/picom
+    ./mac
   ];
-
-  home.file.".config/awesome" = {
-    recursive = true;
-    source = ./simple/dotfiles;
-  };
 
   home.packages = with pkgs; [
     arandr
