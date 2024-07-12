@@ -22,20 +22,27 @@
     # For funsies
     spotify
     vesktop
-    ncmpcpp
-    mpd
-    mpdris2
+    
 
     # Other utility
     mullvad-vpn
     transmission_4-gtk
     imagemagick
     neofetch
+    maim
+    xclip
+    slop
+    swappy
+    inotify-tools
   ];
+
+  # Clips
+  services.clipmenu.enable = true;
 
   # Enable sound control
   services.easyeffects.enable = true;
 
+  # Enable playerctl daemon
   services.playerctld.enable = true;
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

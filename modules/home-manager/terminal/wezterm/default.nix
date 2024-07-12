@@ -1,7 +1,12 @@
 { pkgs, ... }:
 
 {
-  home.packages = [
-    pkgs.wezterm
+
+  imports = [
+    ./colors.nix
   ];
+
+  programs.wezterm = {
+    enable = true;
+  };
 }

@@ -1,7 +1,9 @@
 { pkgs, ... }:
 
 {
-  home.packages = [
-    pkgs.eww
-  ];
+
+  programs.eww = {
+    configDir = ./config;
+    enable = true;
+  };
 }

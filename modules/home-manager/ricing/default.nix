@@ -3,6 +3,8 @@
 {
     imports = [
         ./awesomewm
+        ./hyprland
+        ./rofi
     ];
 
     # GTK theming
@@ -16,4 +18,11 @@
     qt.platformTheme = "gtk";
     qt.style.name = "adwaita-dark";
     qt.style.package = pkgs.adwaita-qt;
+
+    programs.yazi.enable = true;
+
+    home.packages = with pkgs; [
+        pcmanfm
+        bottom
+    ];
 }
