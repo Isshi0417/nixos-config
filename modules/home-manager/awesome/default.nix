@@ -25,7 +25,7 @@ in
 
   home.file.".config/awesome" = {
     recursive = true;
-    source = ./dotfiles;
+    source = ./simple/dotfiles;
   };
 
   home.packages = with pkgs; [
