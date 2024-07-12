@@ -19,8 +19,8 @@ let
 in 
 {
   imports = [
-    ./rofi
-    ./picom
+    ./simple/rofi
+    ./simple/picom
   ];
 
   home.file.".config/awesome" = {
