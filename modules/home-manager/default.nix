@@ -5,8 +5,9 @@
         ./git
         ./terminal
         ./gnome-extensions
-        ./awesome
+        #./awesome
         ./hyprland
+        ./qt/retro
     ];
 
     # Allow Unfree

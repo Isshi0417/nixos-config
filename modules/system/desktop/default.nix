@@ -2,8 +2,9 @@
 
 {
     imports = [
-        ./gnome-de.nix
+        #./gnome-de.nix
         ./hyprland.nix
         ./awesome.nix
+        ./kde.nix
     ];
 }

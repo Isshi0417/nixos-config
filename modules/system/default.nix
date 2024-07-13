@@ -11,6 +11,19 @@
         ./audio
     ];
 
+    services.xserver = {
+        enable = true;
+    };
+
+    services.displayManager.sddm = {
+        enable = true;
+
+        wayland = {
+            enable = true;
+            compositor = "kwin";
+        };
+    };
+
     nixpkgs.config.allowUnfree = true;
 
     environment.systemPackages = with pkgs; [

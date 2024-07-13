@@ -71,11 +71,6 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  services.xserver.displayManager.gdm = {
-    enable = true;
-    wayland = true;
-  };
-
   programs.zsh.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
