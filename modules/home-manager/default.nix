@@ -4,6 +4,7 @@
     imports = [
         ./git
         ./qt/retro
+        ./shell
     ];
 
     # Allow Unfree
