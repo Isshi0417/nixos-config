@@ -3,10 +3,6 @@
 {
     imports = [
         ./git
-        ./terminal
-        ./gnome-extensions
-        #./awesome
-        ./hyprland
         ./qt/retro
     ];
 

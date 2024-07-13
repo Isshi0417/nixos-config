@@ -19,9 +19,6 @@
       # Gaming
       ../../modules/gaming
 
-      # Ricing
-      ../../modules/ricing
-
       # Home-manager
       inputs.home-manager.nixosModules.default
     ];
