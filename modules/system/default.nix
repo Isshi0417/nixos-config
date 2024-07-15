@@ -37,8 +37,8 @@
         fontconfig = {
             defaultFonts = {
                 serif = [ "Hack Nerd Font" ];
-                sansSerif = [ "DejaVuSansM Nerd Font" ];
-                monospace = [ "JetBrainsMono Nerd Font" ];
+                sansSerif = [ "Hack Nerd Font" ];
+                monospace = [ "GohuFont 14 Nerd Font" ];
             };
         };
     };
