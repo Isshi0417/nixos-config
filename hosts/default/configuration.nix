@@ -22,9 +22,6 @@
       # Gaming
       ../../modules/gaming
 
-      # Theming
-      ../../modules/stylix/gruvbox
-
       # Home-manager
       inputs.home-manager.nixosModules.default
     ];
