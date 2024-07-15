@@ -2,7 +2,7 @@
 
 {
     imports = [
-        ./starship
+        ./oh-my-posh
     ];
 
     # Download zsh packages

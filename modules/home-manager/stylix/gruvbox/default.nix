@@ -20,10 +20,10 @@
     targets = {
       bat.enable = true;
       firefox.enable = true;
+      kde.enable = true;
       lazygit.enable = true;
       mangohud.enable = true;
       vesktop.enable = true;
-      wezterm.enable = true;
       xresources.enable = true;
       zathura.enable = true;
     };
