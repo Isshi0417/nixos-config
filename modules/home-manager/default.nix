@@ -4,8 +4,8 @@
     imports = [
         ./git
         ./qt/retro
-        ./shell
         ./terminal
+        ./oh-my-posh
     ];
 
     # Allow Unfree
@@ -38,8 +38,17 @@
 
         # Utils
         bat.enable = true;
+        eza.enable = true;
         lazygit.enable = true;
         mangohud.enable = true;
         zathura.enable = true;
+        zoxide.enable = true;
+
+        zsh = {
+            enable = true;
+            enableCompletion = true;
+            syntaxHighlighting.enable = true;
+            autosuggestion.enable = true;
+        };
     };
 }

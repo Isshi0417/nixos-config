@@ -13,6 +13,9 @@
       # System
       ../../modules/system
 
+      # Shell
+      ../../modules/shell
+
       # NH
       ../../modules/nh
 

@@ -9,19 +9,11 @@
         ./printing
         ./bluetooth
         ./audio
+        ./window-manager
     ];
 
     services.xserver = {
         enable = true;
-    };
-
-    services.displayManager.sddm = {
-        enable = true;
-
-        wayland = {
-            enable = true;
-            compositor = "kwin";
-        };
     };
 
     nixpkgs.config.allowUnfree = true;
@@ -41,5 +33,13 @@
             nerdfonts
             font-awesome
         ];
+
+        fontconfig = {
+            defaultFonts = {
+                serif = [ "Hack Nerd Font" ];
+                sansSerif = [ "DejaVuSansM Nerd Font" ];
+                monospace = [ "JetBrainsMono Nerd Font" ];
+            };
+        };
     };
 }
