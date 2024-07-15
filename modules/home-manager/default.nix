@@ -25,6 +25,7 @@
         # Utils
         corefonts
         noto-fonts
+        cool-retro-term
     ];
 
     programs = {
