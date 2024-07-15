@@ -4,6 +4,9 @@
   imports =
   [
     ../../modules/home-manager
+
+    # Styling
+    ../../modules/home-manager/stylix/gruvbox
   ];
 
   home.username = "shoi";

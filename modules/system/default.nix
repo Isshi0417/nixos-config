@@ -41,13 +41,5 @@
             nerdfonts
             font-awesome
         ];
-
-        fontconfig = {
-            defaultFonts = {
-                serif = [ "Hack Nerd Font" ];
-                sansSerif = [ "DejaVuSansM Nerd Font" ];
-                monospace = [ "JetBrainsMono Nerd Font" ];
-            };
-        };
     };
 }

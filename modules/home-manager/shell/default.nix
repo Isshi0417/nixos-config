@@ -1,6 +1,10 @@
 { pkgs, ... }:
 
 {
+    imports = [
+        ./starship
+    ];
+
     # Download zsh packages
     home.packages = with pkgs; [
         zsh
@@ -25,7 +29,4 @@
 
         
     };
-
-    programs.starship.enable = true;
-    programs.starship.enableZshIntegration = true;
 }

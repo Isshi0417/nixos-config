@@ -19,6 +19,9 @@
       # Gaming
       ../../modules/gaming
 
+      # Theming
+      ../../modules/stylix/gruvbox
+
       # Home-manager
       inputs.home-manager.nixosModules.default
     ];
@@ -86,7 +89,7 @@
     };
   };
 
-  home-manager.backupFileExtension = "backup-1";
+  home-manager.backupFileExtension = "backup-9";
 
   environment.sessionVariables = {
     FLAKE = "/home/shoi/etc/nixos";
@@ -98,6 +101,8 @@
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     lm_sensors
     brightnessctl
+    python312
+    python312Packages.pip
   ];
 
   programs.light.enable = true;

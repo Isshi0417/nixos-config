@@ -60,6 +60,9 @@
           # Home-manager
           inputs.home-manager.nixosModules.default
 
+          # Stylix
+          inputs.stylix.nixosModules.stylix
+
           #Aagl
           inputs.aagl.nixosModules.default
         ];

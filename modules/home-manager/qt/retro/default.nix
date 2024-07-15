@@ -4,6 +4,10 @@
   home.packages = with pkgs; [
     gruvbox-plus-icons
     afterglow-cursors-recolored
-    kde-gruvbox
   ];
+
+  programs.rofi = {
+    enable = true;
+    theme = "gruvbox-dark";
+  };
 }

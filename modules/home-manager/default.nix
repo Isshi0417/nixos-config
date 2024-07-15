@@ -5,6 +5,7 @@
         ./git
         ./qt/retro
         ./shell
+        ./terminal
     ];
 
     # Allow Unfree
@@ -13,8 +14,6 @@
     home.packages = with pkgs; [
         # Essentials
         ferdium
-        git
-        gh
         vscode-fhs
 
         # School
@@ -22,13 +21,25 @@
         onedrive
         typora
         logisim
-        pandoc
 
         # Utils
         corefonts
         noto-fonts
-        maim
     ];
 
-    programs.firefox.enable = true;
+    programs = {
+        # Essentials
+        firefox.enable = true;
+        git.enable = true;
+        gh.enable = true;
+
+        # School
+        pandoc.enable = true;
+
+        # Utils
+        bat.enable = true;
+        lazygit.enable = true;
+        mangohud.enable = true;
+        zathura.enable = true;
+    };
 }
