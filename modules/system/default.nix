@@ -38,7 +38,7 @@
             defaultFonts = {
                 serif = [ "Hack Nerd Font" ];
                 sansSerif = [ "Hack Nerd Font" ];
-                monospace = [ "GohuFont 14 Nerd Font" ];
+                monospace = [ "FiraCode Nerd Font Mono" ];
             };
         };
     };
