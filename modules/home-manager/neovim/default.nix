@@ -3,8 +3,12 @@
 {
   programs.neovim = {
     enable = true;
-    package = pkgs.neovim-nightly;
     vimAlias = true;
     vimdiffAlias = true;
- };
+  };
+  
+  home.file.".config/nvim" = {
+    recursive = true;
+    source = ./config;
+  };
 }
