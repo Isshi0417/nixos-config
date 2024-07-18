@@ -11,4 +11,10 @@
     recursive = true;
     source = ./config;
   };
+
+  home.packages = with pkgs; [
+    ripgrep
+    fd
+    libgccjit
+  ];
 }
