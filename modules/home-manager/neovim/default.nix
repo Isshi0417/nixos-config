@@ -1,12 +1,10 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   programs.neovim = {
     enable = true;
-  };
-
-  home.file.".config/nvim" = {
-    recursive = true;
-    source = ./config;
-  };
+    package = pkgs.neovim-nightly;
+    vimAlias = true;
+    vimdiffAlias = true;
+ };
 }
