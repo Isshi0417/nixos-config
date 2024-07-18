@@ -22,6 +22,8 @@
       indent-blankline.enable = true;
       bufferline.enable = true;
       noice.enable = true;
+      which-key.enable = true;
+      comment.enable = true;
     };  
   };
 }
