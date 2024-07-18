@@ -6,7 +6,6 @@
         ./qt/retro
         ./terminal
         ./oh-my-posh
-        ./neovim
     ];
 
     # Allow Unfree
