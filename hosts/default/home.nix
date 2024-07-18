@@ -4,6 +4,7 @@
   imports =
   [
     ../../modules/home-manager
+    inputs.nixvim.homeManagerModules.nixvim
   ];
 
   home.username = "shoi";

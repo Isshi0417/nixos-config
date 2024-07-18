@@ -6,6 +6,7 @@
         ./qt/retro
         ./terminal
         ./oh-my-posh
+        ./nixvim
     ];
 
     # Allow Unfree
