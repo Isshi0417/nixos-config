@@ -3,10 +3,10 @@
 {
   programs.neovim = {
     enable = true;
-    defaultEditor = true;
+  };
 
-    plugins = with pkgs.vimPlugins; [
-      lazyvim
-    ];
+  home.file.".config/nvim" = {
+    recursive = true;
+    source = ./config;
   };
 }
