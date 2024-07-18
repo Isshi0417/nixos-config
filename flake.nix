@@ -11,12 +11,12 @@
 
     catppuccin.url = "github:catppuccin/nix";
 
-    stylix.url = "github:danth/stylix";
-
     aagl = {
       url = "github:ezKEa/aagl-gtk-on-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixvim.url = "github:/nix-community/nixvim";
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
@@ -34,11 +34,10 @@
           # Home-manager
           inputs.home-manager.nixosModules.default
 
-          # Stylix
-          inputs.stylix.nixosModules.stylix
-
           #Aagl
           inputs.aagl.nixosModules.default
+
+          inputs.nixvim.nixosModules.nixvim
         ];
       };
     };
