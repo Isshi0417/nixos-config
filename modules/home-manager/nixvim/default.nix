@@ -10,7 +10,10 @@
     defaultEditor = true;
     vimdiffAlias = true;
     
-    colorschemes.gruvbox.enable = true;
+    colorschemes.gruvbox = {
+      enable = true;
+      package = pkgs.vimPlugins.gruvbox-nvim;
+    };
 
     globals = {
       mapleader = " ";
