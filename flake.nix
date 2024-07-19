@@ -19,7 +19,7 @@
     nixvim.url = "github:/nix-community/nixvim";
   };
 
-  outputs = { self, nixpkgs, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nixvim, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -32,12 +32,17 @@
           ./hosts/default/configuration.nix
 
           # Home-manager
-          inputs.home-manager.nixosModules.default
+          inputs.home-manager.nixosModules.home-manager 
 
-          #Aagl
+          # Gayshit
           inputs.aagl.nixosModules.default
+        ];
+      };
 
-          inputs.nixvim.nixosModules.nixvim
+      homeConfigurations.shoi = home-manager.lib.homeManagerConfiguration {
+        inherit nixvim;
+        extraSpecialArgs = { inherit inputs; };
+        modules = [
         ];
       };
     };
