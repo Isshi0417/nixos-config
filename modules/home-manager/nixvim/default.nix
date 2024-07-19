@@ -9,6 +9,11 @@
     enableMan = true;
 
     colorschemes.gruvbox.enable = true;
+
+    opts = {
+      number = true;
+      relativenumber = true;
+    };
     
     plugins = {
       lualine.enable = true;
@@ -21,9 +26,9 @@
       neoscroll.enable = true;
       indent-blankline.enable = true;
       bufferline.enable = true;
-      noice.enable = true;
       which-key.enable = true;
       comment.enable = true;
+      dashboard.enable = true;
     };  
   };
 }
