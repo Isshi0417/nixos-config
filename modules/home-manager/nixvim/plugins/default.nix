@@ -7,5 +7,6 @@
     ./treesitter.nix
     ./telescope.nix
     ./lazygit.nix
+    ./conform.nix
   ];
 }
