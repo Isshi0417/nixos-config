@@ -10,5 +10,6 @@
     ./conform.nix
     ./gitsigns.nix
     ./nvim-cmp.nix
+    ./which-key.nix
   ];
 }
