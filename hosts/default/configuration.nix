@@ -19,9 +19,6 @@
       # NH
       ../../modules/nh
 
-      # nixvim
-      ../../modules/nixvim
-
       # Gaming
       ../../modules/gaming
 
