@@ -8,5 +8,6 @@
     ./telescope.nix
     ./lazygit.nix
     ./conform.nix
+    ./gitsigns.nix
   ];
 }
