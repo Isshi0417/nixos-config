@@ -9,5 +9,6 @@
     ./lazygit.nix
     ./conform.nix
     ./gitsigns.nix
+    ./nvim-cmp.nix
   ];
 }
