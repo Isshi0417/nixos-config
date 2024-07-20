@@ -7,6 +7,7 @@
         ./terminal
         ./oh-my-posh
         ./nixvim
+        ./helix
     ];
 
     # Allow Unfree
