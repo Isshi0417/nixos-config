@@ -21,7 +21,7 @@
         libreoffice-fresh
         onedrive
         typora
-        logisim
+        logisim-evolution
 
         # Utils
         corefonts
