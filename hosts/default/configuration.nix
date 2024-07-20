@@ -103,6 +103,8 @@
     brightnessctl
     python312
     python312Packages.pip
+    python312Packages.python-lsp-server
+    nil
   ];
 
   programs.light.enable = true;
