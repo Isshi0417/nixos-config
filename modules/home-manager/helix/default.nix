@@ -13,7 +13,7 @@
 
         statusline = {
           left = ["mode" "version-control" "file-name"];
-          center = ["read-only-indicator" "total-line-numbers"];
+          center = ["read-only-indicator"];
           right = ["file-encoding" "file-modification-indicator" "file-base-name" "position-percentage" "position"];
         };
 
