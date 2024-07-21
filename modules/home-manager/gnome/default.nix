@@ -1,17 +1,19 @@
 { pkgs,... }:
 
 {
-  home.packages = with pkgs.gnomeExtensions; [
+  home.packages = with pkgs.gnome; ([
+    gnome-tweaks
+  ]) ++ (with pkgs.gnomeExtensions; [
+    arcmenu
+    blur-my-shell
     caffeine
     clipboard-indicator
-    blur-my-shell
     dash-to-dock
-    systemd-manager
-    wifi-qrcode
-    arcmenu
     forge
     freon
-    space-bar
     gsconnect
-  ];
+    space-bar
+    systemd-manager
+    wifi-qrcode
+  ]);
 }
