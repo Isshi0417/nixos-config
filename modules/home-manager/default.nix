@@ -9,6 +9,7 @@
         ./nixvim
         ./helix
         ./gnome
+        ./eww
     ];
 
     # Allow Unfree
