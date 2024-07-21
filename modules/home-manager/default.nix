@@ -8,6 +8,7 @@
         ./oh-my-posh
         ./nixvim
         ./helix
+        ./gnome
     ];
 
     # Allow Unfree
