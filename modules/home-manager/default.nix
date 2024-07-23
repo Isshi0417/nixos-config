@@ -23,12 +23,15 @@
         libreoffice-fresh
         onedrive
         typora
+        obsidian
         logisim-evolution
 
         # Utils
         corefonts
         noto-fonts
         cool-retro-term
+        gradience
+        ocs-url
     ];
 
     programs = {
