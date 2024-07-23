@@ -47,6 +47,14 @@
     };
   };
 
+  # Configure suspend behavior
+  systemd.sleep.extraConfig = ''
+    AllowSuspend=no
+    AllowHybernation=no
+    AllowHybridSleep=no
+    AllowSuspendThenHibernate=no
+  '';
+    
   networking.hostName = "alienware"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
