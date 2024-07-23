@@ -105,6 +105,7 @@
     python312Packages.pip
     python312Packages.python-lsp-server
     nil
+    marksman
   ];
 
   programs.light.enable = true;

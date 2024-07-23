@@ -9,7 +9,7 @@
       editor = {
         line-number = "relative";
         shell = ["sh" "-c"];
-        rulers = [79];
+        rulers = [80];
 
         statusline = {
           left = ["mode" "version-control" "file-name"];
