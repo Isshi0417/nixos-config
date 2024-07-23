@@ -5,13 +5,13 @@
     gnome-tweaks
   ]) ++ (with pkgs.gnomeExtensions; [
     arcmenu
-    blur-my-shell
     caffeine
     clipboard-indicator
     dash-to-dock
     forge
     freon
     gsconnect
+    just-perfection
     space-bar
     systemd-manager
     wifi-qrcode
